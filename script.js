@@ -99,9 +99,11 @@ renderTools();
 const navToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
 
-navToggle.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+}
 
 // Close mobile nav after clicking a link
 document.querySelectorAll('.nav-link').forEach(link => {
