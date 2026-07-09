@@ -670,95 +670,159 @@ h2.on-dark{
   margin-top:12px;
 }
 
-/* ---------- Stores ---------- */
+/* ===========================
+   Featured Projects
+=========================== */
 
 .stores-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-
-@media (max-width:900px){
-  .stores-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media (max-width:600px){
-  .stores-grid{
-    grid-template-columns:1fr;
-  }
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:24px;
+    margin-top:55px;
 }
 
 .store-card{
-  background:var(--white);
-  border:1px solid var(--border-light);
-  border-radius:16px;
-  padding:22px 22px 20px;
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-  transition:transform .2s ease, box-shadow .2s ease;
+
+    background:#fff;
+
+    border:1px solid #ece7da;
+
+    border-radius:20px;
+
+    padding:24px;
+
+    transition:.30s;
+
 }
 
 .store-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 14px 28px rgba(31,42,36,0.08);
+
+    transform:translateY(-6px);
+
+    box-shadow:0 16px 36px rgba(0,0,0,.08);
+
 }
 
 .store-top{
-  display:flex;
-  align-items:center;
-  gap:9px;
-  margin-bottom:2px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:16px;
+
 }
 
 .store-logo{
-  width:20px;
-  height:20px;
-  object-fit:contain;
+
+    width:22px;
+
+    height:22px;
+
 }
 
 .store-platform{
-  font-family:var(--display);
-  font-size:11.5px;
-  font-weight:700;
-  color:var(--ink-faint);
-  text-transform:uppercase;
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:.6px;
+
+}
+
+.store-platform.ebay{
+
+    color:#E53238;
+
+}
+
+.store-platform.etsy{
+
+    color:#F16521;
+
+}
+
+.store-platform.wordpress{
+
+    color:#21759B;
+
 }
 
 .store-name{
-  font-family:var(--display);
-  font-weight:700;
-  font-size:17px;
-  color:var(--ink);
+
+    font-size:1.45rem;
+
+    font-weight:700;
+
+    color:var(--dark);
+
+    margin-bottom:6px;
+
 }
 
 .store-niche{
-  font-size:13px;
-  color:var(--amber);
-  font-style:italic;
-  font-weight:600;
+
+    color:#d78b1d;
+
+    font-style:italic;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
 }
 
-.store-resp{
-  font-size:13px;
-  color:var(--ink-soft);
-  line-height:1.5;
-  flex-grow:1;
+.store-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:8px;
+
+    margin-bottom:20px;
+
 }
 
-.store-card a{
-  font-family:var(--display);
-  font-size:13px;
-  font-weight:700;
-  color:var(--green);
-  margin-top:6px;
+.store-tags span{
+
+    background:#eef8f2;
+
+    color:var(--green);
+
+    border-radius:40px;
+
+    padding:6px 12px;
+
+    font-size:.76rem;
+
+    font-weight:600;
+
 }
 
-.store-card a:hover{
-  text-decoration:underline;
+.store-link{
+
+    color:var(--green);
+
+    font-weight:700;
+
+    text-decoration:none;
+
 }
+
+.store-link:hover{
+
+    opacity:.8;
+
+}
+
 
 /* ---------- Contact ---------- */
 
