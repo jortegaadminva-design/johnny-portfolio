@@ -671,157 +671,287 @@ h2.on-dark{
 }
 
 /* ===========================
-   Featured Projects
+   Featured Client Projects
 =========================== */
 
 .stores-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:24px;
-    margin-top:55px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:22px;
+  margin-top:45px;
 }
 
 .store-card{
-
-    background:#fff;
-
-    border:1px solid #ece7da;
-
-    border-radius:20px;
-
-    padding:24px;
-
-    transition:.30s;
-
+  background:#fff;
+  border:1px solid #ece7da;
+  border-radius:18px;
+  padding:22px;
+  transition:.25s ease;
 }
 
 .store-card:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:0 16px 36px rgba(0,0,0,.08);
-
+  transform:translateY(-5px);
+  box-shadow:0 14px 32px rgba(0,0,0,.08);
 }
 
 .store-top{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
-
-    margin-bottom:16px;
-
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
 }
 
 .store-logo{
-
-    width:22px;
-
-    height:22px;
-
+  width:22px;
+  height:22px;
+  object-fit:contain;
 }
 
 .store-platform{
-
-    font-size:.82rem;
-
-    font-weight:700;
-
-    text-transform:uppercase;
-
-    letter-spacing:.6px;
-
+  font-size:.8rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:.6px;
 }
 
 .store-platform.ebay{
-
-    color:#E53238;
-
+  color:#E53238;
 }
 
 .store-platform.etsy{
-
-    color:#F16521;
-
+  color:#F16521;
 }
 
 .store-platform.wordpress{
-
-    color:#21759B;
-
+  color:#21759B;
 }
 
 .store-name{
-
-    font-size:1.45rem;
-
-    font-weight:700;
-
-    color:var(--dark);
-
-    margin-bottom:6px;
-
+  font-family:var(--display);
+  font-size:1.35rem;
+  font-weight:700;
+  color:var(--ink);
+  margin-bottom:5px;
 }
 
 .store-niche{
-
-    color:#d78b1d;
-
-    font-style:italic;
-
-    font-size:.95rem;
-
-    font-weight:600;
-
-    margin-bottom:18px;
-
+  color:#d78b1d;
+  font-style:italic;
+  font-size:.9rem;
+  font-weight:600;
+  margin-bottom:15px;
 }
 
 .store-tags{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    gap:8px;
-
-    margin-bottom:20px;
-
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin-bottom:18px;
 }
 
 .store-tags span{
-
-    background:#eef8f2;
-
-    color:var(--green);
-
-    border-radius:40px;
-
-    padding:6px 12px;
-
-    font-size:.76rem;
-
-    font-weight:600;
-
+  background:#eef8f2;
+  color:var(--green);
+  border-radius:999px;
+  padding:5px 10px;
+  font-size:.74rem;
+  font-weight:600;
 }
 
 .store-link{
-
-    color:var(--green);
-
-    font-weight:700;
-
-    text-decoration:none;
-
+  display:inline-block;
+  color:var(--green);
+  font-family:var(--display);
+  font-weight:700;
+  font-size:.9rem;
+  text-decoration:none;
 }
 
 .store-link:hover{
+  opacity:.8;
+}
 
-    opacity:.8;
+@media(max-width:600px){
+  .stores-grid{
+    grid-template-columns:1fr;
+  }
+
+  .store-card{
+    padding:20px;
+  }
+}
+
+/* ===========================
+      TESTIMONIALS
+=========================== */
+
+.testimonial-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+
+    gap:28px;
+
+    margin-top:55px;
 
 }
+
+.testimonial-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.30s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+
+}
+
+.quote-icon{
+
+    font-size:42px;
+
+    color:var(--green);
+
+    line-height:1;
+
+    margin-bottom:16px;
+
+    font-family:Georgia, serif;
+
+}
+
+.testimonial-text{
+
+    color:#555;
+
+    font-size:15px;
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+
+    font-style:italic;
+
+}
+
+.testimonial-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-top:1px solid #ececec;
+
+    padding-top:18px;
+
+}
+
+.testimonial-footer h4{
+
+    margin:0;
+
+    font-size:17px;
+
+    color:#1F2A24;
+
+}
+
+.testimonial-footer span{
+
+    color:#888;
+
+    font-size:13px;
+
+}
+
+.stars{
+
+    color:#FFC107;
+
+    font-size:18px;
+
+    letter-spacing:2px;
+
+}
+
+.on-dark{
+
+    color:#fff;
+
+}
+
+.section-sub-center.on-dark{
+
+    color:rgba(255,255,255,.75);
+
+}
+
+@media(max-width:768px){
+
+    .testimonial-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    
+}
+
+#testimonials h2.on-dark{
+  color:#fff !important;
+  font-size:clamp(26px,3vw,36px);
+  margin-bottom:16px;
+  text-align:center;
+}
+
+#testimonials .section-sub-center.on-dark{
+  color:rgba(255,255,255,.78);
+}
+
+/* ==========================
+   Center Testimonials Header
+========================== */
+
+#testimonials .section-head-center{
+    max-width: 800px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+#testimonials .section-tag{
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+#testimonials h2{
+    color: #fff;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    text-align: center;
+    margin: 0 auto 18px;
+}
+
+#testimonials .section-sub-center{
+    color: rgba(255,255,255,.78);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 
 
 /* ---------- Contact ---------- */
