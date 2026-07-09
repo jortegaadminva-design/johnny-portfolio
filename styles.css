@@ -632,6 +632,13 @@ h2.on-dark{
   text-align:center;
 }
 
+.impact-text{
+  font-size:13.5px;
+  color:var(--ink-soft);
+  line-height:1.6;
+  margin-top:12px;
+}
+
 /* ---------- Stores ---------- */
 
 .stores-grid{
@@ -736,6 +743,8 @@ h2.on-dark{
     grid-template-columns:1fr;
   }
 }
+
+
 
 .contact-lead{
   color:var(--ink-soft);
@@ -856,12 +865,81 @@ h2.on-dark{
   margin-bottom:20px;
 }
 
-/* ---------- Footer ---------- */
+.site-footer{
+    background:#1f1f21;
+    color:#fff;
+    text-align:center;
+    padding:18px 20px 12px;
+}
 
-.site-footer-dark{
-  background:var(--navy);
-  color:#A9B4AE;
-  text-align:center;
-  padding:22px 0;
-  font-size:13px;
+.footer-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.footer-name{
+    font-size:1.3rem;
+    font-weight:700;
+    margin-bottom:6px;
+    color:#fff;
+}
+
+.footer-role{
+    color:#D8C7A4;
+    font-size:.82rem;
+    margin-bottom:10px;
+}
+
+.footer-info{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:6px;
+    font-size:.8rem;
+    margin-bottom:10px;
+}
+
+.footer-info a{
+    color:#F3D38A;
+    text-decoration:none;
+}
+
+.footer-info a:hover{
+    color:#46C97B;
+}
+
+.available{
+    color:#46C97B;
+    font-weight:600;
+}
+
+.footer-copy{
+    color:#7f7f7f;
+    font-size:.75rem;
+    margin:0;
+}
+
+@media(max-width:768px){
+
+    .site-footer{
+        padding:18px 16px 12px;
+    }
+
+    .footer-name{
+        font-size:1.15rem;
+    }
+
+    .footer-role{
+        font-size:.78rem;
+    }
+
+    .footer-info{
+        flex-direction:column;
+        gap:3px;
+    }
+
+    .footer-info span:nth-child(even){
+        display:none;
+    }
 }
