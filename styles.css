@@ -465,96 +465,71 @@ h2.on-dark{
 }
 
 .tool-category{
-  margin-top:70px;
+  margin-top:44px;
 }
 
 .tool-category:first-of-type{
-  margin-top:35px;
+  margin-top:8px;
 }
 
 .tool-category h3{
+  display:flex;
+  align-items:center;
+  gap:10px;
   font-family:var(--display);
-  font-size:24px;
-  line-height:1.2;
-  margin-bottom:28px;
-  color:var(--ink);
+  font-size:13px;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
   font-weight:700;
+  border-bottom:1px solid var(--border-light);
+  padding-bottom:14px;
+  margin-bottom:20px;
 }
 
-.tool-category .tools-grid{
-  margin-bottom:55px;
-  row-gap:28px;
-  column-gap:24px;
+.tool-pill-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
 }
 
-.tool-card{
+.tool-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
   background:var(--white);
   border:1px solid var(--border-light);
-  border-radius:16px;
-  min-height:140px;
-  padding:26px 16px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
-  transition:.25s ease;
+  border-radius:999px;
+  padding:8px 18px 8px 8px;
+  box-shadow:0 2px 6px rgba(31,42,36,0.05);
+  transition: transform .15s ease, box-shadow .15s ease;
 }
 
-.tool-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 16px 30px rgba(31,42,36,.12);
+.tool-pill:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 18px rgba(31,42,36,0.1);
 }
 
-.tool-logo{
-  width:56px;
-  height:56px;
-  object-fit:contain;
-  margin-bottom:12px;
-}
-
-.tool-fallback{
-  width:46px;
-  height:46px;
-  border-radius:50%;
-  background:var(--mint);
-  color:var(--green);
+.tool-pill .badge{
+  width:30px;
+  height:30px;
+  border-radius:9px;
   display:flex;
   align-items:center;
   justify-content:center;
+  color:#fff;
   font-family:var(--display);
-  font-size:13px;
   font-weight:800;
-  margin-bottom:12px;
+  font-size:12.5px;
+  flex-shrink:0;
 }
 
-.tool-name{
+.tool-pill .label{
   font-family:var(--display);
-  font-size:13px;
   font-weight:600;
-  color:var(--ink-soft);
-  text-align:center;
-}
-
-@media (max-width:768px){
-  .tool-category{
-    margin-top:55px;
-  }
-
-  .tool-category .tools-grid{
-    margin-bottom:42px;
-    row-gap:20px;
-  }
-
-  .tool-card{
-    min-height:125px;
-    padding:22px 12px;
-  }
-
-  .tool-logo{
-    width:48px;
-    height:48px;
-  }
+  font-size:14.5px;
+  color:var(--ink);
+  white-space:nowrap;
 }
 
 /* ---------- Experience ---------- */
@@ -866,6 +841,19 @@ h2.on-dark{
 
 .contact-form button{
   margin-top:18px;
+}
+
+.availability-badge{
+  display:inline-block;
+  background:#EAF3EA;
+  color:var(--green-dark);
+  border:1px solid var(--border-light);
+  border-radius:999px;
+  padding:9px 16px;
+  font-family:var(--display);
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:20px;
 }
 
 /* ---------- Footer ---------- */
