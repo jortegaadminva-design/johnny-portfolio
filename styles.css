@@ -64,6 +64,12 @@ h1,h2{ font-family:var(--display); }
   color:var(--ink);
 }
 
+.brand-logo{
+  height:52px;
+  width:auto;
+  display:block;
+}
+
 .nav{
   display:flex;
   gap:30px;
